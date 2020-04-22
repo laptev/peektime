@@ -1,0 +1,1244 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Peektime</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+        <!-- ============================================
+        ================= Stylesheets ===================
+        ============================================= -->
+        <!-- vendor css files -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/datatables.bootstrap.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/extensions/Responsive/css/dataTables.responsive.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/extensions/ColVis/css/dataTables.colVis.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/extensions/TableTools/css/dataTables.tableTools.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/fullcalendar/fullcalendar.css">
+        <link rel="stylesheet" href="assets/js/vendor/toastr/toastr.min.css">
+
+        <link rel="stylesheet" href="assets/js/vendor/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/js/vendor/summernote/summernote.css">
+
+        <!-- project main css files -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/over.css">
+        <!--/ stylesheets -->
+
+
+
+        <!-- ==========================================
+        ================= Modernizr ===================
+        =========================================== -->
+        <script src="assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--/ modernizr -->
+
+
+
+
+    </head>
+
+
+
+
+
+    <body id="minovate" class="appWrapper scheme-light sidebar-none full-height">
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <!-- ====================================================
+        ================= Application Content ===================
+        ===================================================== -->
+        <div id="wrap" class="animsition full-height">
+
+
+
+
+            <!-- ===============================================
+            ================= HEADER Content ===================
+            ================================================ -->
+            <section id="header" class="scheme-light">
+                <header class="clearfix">
+
+
+                    <!-- Left-side navigation -->
+                    <ul class="pull-left header-actions p-0 m-0">
+                        <li>
+                            <a class="pt-logo" href="dashboard.html">
+                                <span class="hidden-sm hidden-xs"><img src="assets/images/peektime_logo.svg" class="logo-header" alt="Peektime"></span>
+                                <span class="visible-sm visible-xs"><img src="assets/images/peektime_symbol.svg" class="symbol-header" alt="Peektime"></span>
+                            </a>
+                            <a class="pt-header-connect pt-header-btn"><i class="fa fa-phone mr-10"></i><span class="hidden-xs">Connect now</span></a>
+                            <a class="pt-header-plan pt-header-btn"  data-toggle="modal" data-target="#plan_meeting"><i class="fa fa-calendar-o mr-10"></i><span class="hidden-xs">Plan a meeting</span></a>
+                            <a class="hidden-sm pt-header-btn active" href="meetings.html"><i class="fa fa-calendar mr-10"></i><span class="hidden-xs">My Meetings</span></a>
+                            <a class="hidden-sm pt-header-btn" href="contacts.html"><i class="fa fa-user mr-10"></i><span class="hidden-xs">My Contacts</span></a>
+                            <a class="hidden-sm pt-header-btn" href="administration.html"><i class="fa fa-cog mr-10"></i></i><span class="hidden-xs">Administration</span></a>
+
+
+                            <div class="btn-group pull-right visible-sm hidden-xs">
+                                <a class="dropdown-toggle" data-toggle="dropdown">More...</a>
+
+                                <ul class="dropdown-menu top-dropdown animated littleFadeInRight">
+                                    <li><a href="meetings.html"><i class="fa fa-calendar mr-10"></i>My Meetings</a></li>
+                                    <li><a href="contacts.html"><i class="fa fa-user mr-10"></i>My Contacts</a></li>
+                                    <li><a href="administration.html"><i class="fa fa-cog mr-10"></i>Administration</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Left-side navigation end -->
+
+
+
+
+                    <!-- Right-side navigation -->
+                    <ul class="nav-right pull-right list-inline header-actions">
+
+                        <li class="dropdown nav-profile">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30 pt-avatar-photo hidden">
+                                <span class="img-circle size-30x30 pt-avatar-icon"><i class="fa fa-user"></i></span>
+                                <span class="hidden-xs">Jon Snow <i class="fa fa-angle-down"></i></span>
+                            </a>
+
+                            <ul class="dropdown-menu profile-toggle animated littleFadeInRight" role="menu">
+
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="badge bg-greensea pull-right">86%</span>
+                                        <i class="fa fa-user"></i>Profile
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i>Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <!-- Right-side navigation end -->
+
+
+
+                </header>
+
+            </section>
+            <!--/ HEADER Content  -->
+
+
+
+
+
+
+
+            <!-- =================================================
+            ================= CONTROLS Content ===================
+            ================================================== -->
+            <div id="controls">
+
+
+
+
+
+                <!-- ================================================
+                ================= SIDEBAR Content ===================
+                ================================================= -->
+
+                <!--/ SIDEBAR Content -->
+
+
+
+
+
+                <!-- =================================================
+                ================= RIGHTBAR Content ===================
+                ================================================== -->
+                <!--/ RIGHTBAR Content -->
+
+
+
+
+            </div>
+            <!--/ CONTROLS Content -->
+
+
+
+
+
+            <section id="content">
+
+                <div class="page page-full page-calendar">
+
+                    <div class="tbox tbox-sm">
+
+
+
+
+
+
+                        <!-- left side -->
+                        <div class="tcol w-lg bg-tr-white lt b-r">
+
+
+
+
+
+
+
+
+                            <!-- left side header-->
+                            <div class="bg-white pt-contacts-header">
+                                <button type="button" class="btn btn-primary btn-xs mb-10 pull-right b-0 hidden-sm hidden-xs" data-toggle="modal" href="#cal-new-event">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary mb-10 visible-sm visible-xs pull-right pt-header-action">Add Meeting</button>
+                                <h4 class="custom-font text-default m-0">My Meetings</h4>
+                            </div>
+                            <!-- /left side header -->
+
+
+
+
+
+
+                            <!-- left side body -->
+                            <div class="p-15 collapse collapse-xs collapse-sm" id="external-events">
+                                
+                                <span class="label bg-red pull-right label-lg br-0 hidden">in 5min 30 sec</span>
+                                <h5 class="mt-5 mb-20">Upcoming event</h5>
+
+                                <div class="p-10 mb-10 event-control b-2x b-l b-danger pt_nextmeeting">
+                                    <span class="mr-10 fs-16">15:30</span><p class="mt-0 mb-0 color-red inline-block"><i class="fa fa-clock-o"></i> in less then 6 min</p>
+                                    <span class="block">MEETING WITH THE TEAM</block>
+                                    <p><i class="fa fa-user"></i> 2 invited</p>
+                                    <div class="btn-group">
+                                        <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Edit
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pt-meeting" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+                                            <li><a href="#">Add participants</a></li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-success pull-right pt-startmeeting">Start Meeting</button>
+                                </div>
+
+                                <h5 class="mt-30 mb-20">Recently planned meetings</h5>
+
+                                <div class="p-10 mb-10 event-control b-2x b-l b-primary">
+                                    <span class="mr-10 fs-16">16:30</span><p class="mt-0 mb-0 inline-block"><i class="fa fa-calendar-o"></i> 16 Oct 2016</p>
+                                    <span class="block">STAND-UP CALL NAME WITH A LONG TITLE</span>
+                                    <p><i class="fa fa-user"></i> 9 invited</p>
+                                    <div class="btn-group">
+                                        <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Edit
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pt-meeting" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+                                            <li><a href="#">Add participants</a></li>
+                                            <li><a href="#">Copy meeting</a></li>
+                                            <li><a href="#">Cancel meeting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="p-10 mb-10 event-control b-2x b-l b-primary">
+                                    <span class="mr-10 fs-16">12:30</span><p class="mt-0 mb-0 inline-block"><i class="fa fa-calendar-o"></i> 17 Oct 2016</p>
+                                    <span class="block">CAL WITH JON</span>
+                                    <p><i class="fa fa-user"></i> 1 invited</p>
+                                    <div class="btn-group">
+                                        <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Edit
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pt-meeting" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+                                            <li><a href="#">Add participants</a></li>
+                                            <li><a href="#">Copy meeting</a></li>
+                                            <li><a href="#">Cancel meeting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- /left side body -->
+
+
+
+
+
+
+
+
+                        </div>
+                        <!-- /left side -->
+
+
+
+
+
+
+
+                        <!-- right side -->
+                        <div class="tcol">
+
+                            <!-- right side header -->
+                            <div class="bg-white pt-contacts-rheader-meetings">
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-default" id="change-view-today">Today</button>
+                                    <div class="btn-group ml-10">
+                                        <button class="btn btn-default active" id="change-view-day" onclick="location.href='meetings-day.html'">Day</button>
+                                        <button class="btn btn-default" id="change-view-week" onclick="location.href='meetings.html'">Week</button>
+                                        <!--<button class="btn btn-default btn-sm" id="change-view-month">Month</button>-->
+                                    </div>
+                                </div>
+                                <h4 class="custom-font text-default m-0">Calendar</h4>
+                            </div>
+                            <!-- /right side header -->
+
+
+
+
+
+<div class="p-15">
+
+
+<div id="calendar" class="fc fc-ltr fc-unthemed">
+<div class="fc-toolbar">
+<div class="fc-left">
+<button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left fc-corner-right">
+<span class="fc-icon fc-icon-left-single-arrow">
+</span>
+</button>
+</div>
+<div class="fc-right">
+<button type="button" class="fc-next-button fc-button fc-state-default fc-corner-left fc-corner-right">
+<span class="fc-icon fc-icon-right-single-arrow">
+</span>
+</button>
+</div>
+<div class="fc-center">
+<h2>February 12, 2015</h2>
+</div>
+<div class="fc-clear">
+</div>
+</div>
+
+<div class="fc-view-container" style="">
+<div class="fc-view fc-agendaDay-view fc-agenda-view">
+<table>
+<thead class="fc-head">
+<tr>
+<td class="fc-widget-header">
+    <div class="pt-time-indicator"></div>
+<div class="fc-row fc-widget-header">
+<table class="background-white">
+<thead>
+<tr>
+<th class="fc-axis fc-widget-header" style="width: 43px;">
+</th>
+<th class="fc-day-header fc-widget-header fc-thu">Thursday</th>
+<th class="fc-axis fc-widget-header" style="width: 43px;">
+</th>
+</tr>
+</thead>
+</table>
+</div>
+</td>
+</tr>
+</thead>
+<tbody class="fc-body">
+<tr>
+<td class="fc-widget-content">
+<hr class="fc-divider fc-widget-header">
+<div class="fc-time-grid-container fc-scroller pt-table-day">
+<div class="fc-time-grid">
+<div class="fc-bg">
+<table>
+<tbody>
+<tr>
+<td class="fc-axis fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-day fc-widget-content fc-thu fc-past" data-date="2015-02-12">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fc-slats">
+<table>
+<tbody>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>12am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>1am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>2am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>3am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>4am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>5am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>6am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>7am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>8am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>9am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>10am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>11am</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>12pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>1pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>2pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>3pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>4pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>5pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>6pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>7pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>8pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>9pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>10pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr>
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+<span>11pm</span>
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+<tr class="fc-minor">
+<td class="fc-axis fc-time fc-widget-content" style="width: 43px;">
+</td>
+<td class="fc-widget-content">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="fc-divider fc-widget-header" style="display: none;">
+<div class="fc-content-skeleton">
+<table>
+<tbody>
+<tr>
+<td class="fc-axis" style="width:43px">
+</td>
+<td>
+<div class="fc-event-container">
+<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end b-l b-2x b-primary fc-draggable fc-resizable event-120min pt-event-disabled" style="top: 461px; z-index: 1; left: 0%; right: 0%; margin-right: 20px;">
+<div class="fc-content"><div class="fc-time fs-12 mr-10" data-start="10:30" data-full="10:30 AM - 12:30 PM"><span><b>10:30</b> (2h)</span></div><div class="fc-title mr-10">MEETING WITH THE TEAM</div><p><i class="fa fa-user mr-5"></i>Jon Snow, Alex Laptev, Francois Montandon</p>
+</div>
+
+</a>
+<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end b-l b-2x b-primary fc-draggable fc-resizable event-90min pt-event-disabled pt-event-overlayed" style="top: 527px; z-index: 2; right: 0%;">
+<div class="fc-content"><div class="fc-time fs-12 mr-10" data-start="10:30" data-full="10:30 AM - 12:30 PM"><span><b>12:00</b> (1h 30min)</span></div><div class="fc-title mr-10">DISCUSSION</div><p><i class="fa fa-user mr-5"></i>Nicolas Bourdin</p>
+</div>
+
+</a>
+<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end b-l b-2x b-primary fc-draggable fc-resizable event-30min" style="top: 637px; z-index: 1; left: 0%; right: 0%;"><i class="fa fa-pencil pt-editicon"></i>
+<div class="fc-content"><div class="fc-time fs-12 mr-10" data-start="10:30" data-full="10:30 AM - 12:30 PM"><span><b>14:30</b> (30min)</span></div><div class="fc-title mr-10">MEETING</div>
+</div><p><i class="fa fa-user mr-5"></i>Mike Jefferson</p>
+
+</a>
+<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end b-l b-2x b-primary fc-draggable fc-resizable event-60min" style="top: 769px; z-index: 1; left: 0%; right: 0%;"><i class="fa fa-pencil pt-editicon"></i>
+<div class="fc-content"><div class="fc-time fs-12 mr-10" data-start="10:30" data-full="10:30 AM - 12:30 PM"><span><b>15:30</b> (1h)</span></div><div class="fc-title mr-10">RDV NAME WITH ONE VERY VERY LONG TITLE WHICH IS REALLY LONG</div>
+</div><p><i class="fa fa-user mr-5"></i>Francois Montandon, Nicolas Bourdin</p>
+
+</a>
+<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end b-l b-2x b-primary fc-draggable fc-resizable event-150min" style="top: 879px; z-index: 1; left: 0%; right: 0%;">
+<i class="fa fa-pencil pt-editicon"></i>
+<div class="fc-content"><div class="fc-time fs-12 mr-10" data-start="10:30" data-full="10:30 AM - 12:30 PM"><span><b>17:30</b> (2h 30min)</span></div><div class="fc-title mr-10">STAND-UP</div>
+</div><p><i class="fa fa-user mr-5"></i>Jon Snow</p>
+
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+<!-- /right side -->
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+
+
+
+
+        </div>
+        <!--/ Application Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ============================================
+        ============== Vendor JavaScripts ===============
+        ============================================= -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script src="assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+        <script src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+        <script src="assets/js/vendor/screenfull/screenfull.min.js"></script>
+
+        <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+
+        <script src="assets/js/vendor/summernote/summernote.min.js"></script>
+
+
+        <!--/ vendor javascripts -->
+
+
+
+
+        <!-- ============================================
+        ============== Custom JavaScripts ===============
+        ============================================= -->
+        <script src="assets/js/main.js"></script>
+        <!--/ custom javascripts -->
+
+
+
+
+        <!-- ===============================================
+        ============== Page Specific Scripts ===============
+        ================================================ -->
+        <script>
+            $(window).load(function(){
+
+                $('#calendar').fullCalendar({
+                    header: {
+                        left: 'prev',
+                        center: 'title',
+                        right: 'next'
+                    },
+                    defaultDate: '2015-02-12',
+                    editable: true,
+                    droppable: true, // this allows things to be dropped onto the calendar
+                    drop: function() {
+                        // is the "remove after drop" checkbox checked?
+                        if ($('#drop-remove').is(':checked')) {
+                            // if so, remove the element from the "Draggable Events" list
+                            $(this).remove();
+                        }
+                    },
+                    eventLimit: true, // allow "more" link when too many events
+                    events: [
+                        {
+                            title: 'All Day Event',
+                            start: '2015-02-01',
+                            className: 'b-l b-2x b-greensea'
+                        },
+                        {
+                            title: 'Long Event',
+                            start: '2015-02-07',
+                            end: '2015-02-10',
+                            className: 'bg-dutch'
+                        },
+                        {
+                            id: 999,
+                            title: 'Repeating Event',
+                            start: '2015-02-09T16:00:00',
+                            className: 'b-l b-2x b-lightred'
+                        },
+                        {
+                            id: 999,
+                            title: 'Repeating Event',
+                            start: '2015-02-16T16:00:00',
+                            className: 'b-l b-2x b-success'
+                        },
+                        {
+                            title: 'Conference',
+                            start: '2015-02-11',
+                            end: '2015-02-13',
+                            className: 'b-l b-2x b-primary'
+                        },
+                        {
+                            title: 'Meeting',
+                            start: '2015-02-12T10:30:00',
+                            end: '2015-02-12T12:30:00',
+                            className: 'b-l b-2x b-greensea'
+                        },
+                        {
+                            title: 'Lunch',
+                            start: '2015-02-12T12:00:00',
+                            className: 'b-l b-2x b-primary'
+                        },
+                        {
+                            title: 'Meeting',
+                            start: '2015-02-12T14:30:00',
+                            className: 'b-l b-2x b-drank'
+                        },
+                        {
+                            title: 'Happy Hour',
+                            start: '2015-02-12T17:30:00',
+                            className: 'b-l b-2x b-lightred'
+                        },
+                        {
+                            title: 'Dinner',
+                            start: '2015-02-12T20:00:00',
+                            className: 'b-l b-2x b-greensea'
+                        },
+                        {
+                            title: 'Birthday Party',
+                            start: '2015-02-13T07:00:00',
+                            className: 'b-l b-2x b-primary'
+                        },
+                        {
+                            title: 'Click for Google',
+                            url: 'http://google.com/',
+                            start: '2015-02-28',
+                            className: 'b-l b-2x b-greensea'
+                        }
+                    ]
+                });
+
+                // Hide default header
+                //$('.fc-header').hide();
+
+
+
+                // Previous month action
+                $('#cal-prev').click(function(){
+                    $('#calendar').fullCalendar( 'prev' );
+                });
+
+                // Next month action
+                $('#cal-next').click(function(){
+                    $('#calendar').fullCalendar( 'next' );
+                });
+
+                // Change to month view
+                $('#change-view-month').click(function(){
+                    $('#calendar').fullCalendar('changeView', 'month');
+
+                    // safari fix
+                    $('#content .main').fadeOut(0, function() {
+                        setTimeout( function() {
+                            $('#content .main').css({'display':'table'});
+                        }, 0);
+                    });
+
+                });
+
+                // Change to week view
+                $('#change-view-week').click(function(){
+                    $('#calendar').fullCalendar( 'changeView', 'agendaWeek');
+
+                    // safari fix
+                    $('#content .main').fadeOut(0, function() {
+                        setTimeout( function() {
+                            $('#content .main').css({'display':'table'});
+                        }, 0);
+                    });
+
+                });
+
+                // Change to day view
+                $('#change-view-day').click(function(){
+                    $('#calendar').fullCalendar( 'changeView','agendaDay');
+
+                    // safari fix
+                    $('#content .main').fadeOut(0, function() {
+                        setTimeout( function() {
+                            $('#content .main').css({'display':'table'});
+                        }, 0);
+                    });
+
+                });
+
+                // Change to today view
+                $('#change-view-today').click(function(){
+                    $('#calendar').fullCalendar('today');
+                });
+
+                /* initialize the external events
+                 -----------------------------------------------------------------*/
+                $('#external-events .event-control').each(function() {
+
+                    // store data so the calendar knows to render an event upon drop
+                    $(this).data('event', {
+                        title: $.trim($(this).text()), // use the element's text as the event title
+                        stick: true // maintain when user navigates (see docs on the renderEvent method)
+                    });
+
+                    // make the event draggable using jQuery UI
+                    $(this).draggable({
+                        zIndex: 999,
+                        revert: true,      // will cause the event to go back to its
+                        revertDuration: 0  //  original position after the drag
+                    });
+
+                });
+
+                $('#external-events .event-control .event-remove').on('click', function(){
+                    $(this).parent().remove();
+                });
+
+                // Submitting new event form
+                $('#add-event').submit(function(e){
+                    e.preventDefault();
+                    var form = $(this);
+
+                    var newEvent = $('<div class="event-control p-10 mb-10">'+$('#event-title').val() +'<a class="pull-right text-muted event-remove"><i class="fa fa-trash-o"></i></a></div>');
+
+                    $('#external-events .event-control:last').after(newEvent);
+
+                    $('#external-events .event-control').each(function() {
+
+                        // store data so the calendar knows to render an event upon drop
+                        $(this).data('event', {
+                            title: $.trim($(this).text()), // use the element's text as the event title
+                            stick: true // maintain when user navigates (see docs on the renderEvent method)
+                        });
+
+                        // make the event draggable using jQuery UI
+                        $(this).draggable({
+                            zIndex: 999,
+                            revert: true,      // will cause the event to go back to its
+                            revertDuration: 0  //  original position after the drag
+                        });
+
+                    });
+
+                    $('#external-events .event-control .event-remove').on('click', function(){
+                        $(this).parent().remove();
+                    });
+
+                    form[0].reset();
+
+                    $('#cal-new-event').modal('hide');
+
+                });
+
+
+            });
+        </script>
+        <!--/ Page Specific Scripts -->
+
+
+
+    
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+
+
+        <div class="modal fade pt-modal" id="plan_meeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog pt-shadow perc-80">
+                <div class="modal-content noshadow b-0">
+                    <div class="modal-header">
+                        <a class="tile-close pull-right pt-popup-close" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                        <h3 class="modal-title custom-font"><i class="fa fa-calendar-o mr-10 ml-5"></i> Plan a Meeting</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="">
+
+                            <form name="newMail" class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Participants:</label>
+                                    <div class="col-lg-8">
+                                        <select data-placeholder="Select recipients..." multiple="" tabindex="3" class="chosen-select" style="width: 100%;">
+                                            <option value="ici@gmail.com">ici@gmail.com</option>
+                                            <option value="johny@gmail.com">johny@gmail.com</option>
+                                            <option value="arnie@gmail.com">arnie@gmail.com</option>
+                                            <option value="pete@gmail.com">pete@gmail.com</option>
+                                            <option value="gorge@gmail.com">gorge@gmail.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Topic:</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Date and Time:</label>
+                                    <div class="col-lg-4">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Duration:</label>
+                                    <div class="col-lg-4">
+
+                                        <select class="form-control">
+                                            <option>15 min</option>
+                                            <option selected>30 min</option>
+                                            <option>45 min</option>
+                                            <option>1 hour</option>
+                                            <option>1 hour 15 min</option>
+                                            <option>1 hour 30 min</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer mt-10">
+                        <button class="btn btn-default pull-left" data-dismiss="modal">Cancel planning</button>
+                        <button class="btn btn-default mr-10"><i class="fa fa-eye mr-5"></i> Preview invitation</button>
+                        <button class="btn btn-primary"><i class="fa fa-send-o mr-5"></i> Send 6 invitations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade pt-modal" id="edit_meeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog pt-shadow perc-80">
+                <div class="modal-content noshadow b-0">
+                    <div class="modal-header">
+                        <a class="tile-close pull-right pt-popup-close" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                        <h3 class="modal-title custom-font"><i class="fa fa-pencil mr-10 ml-5"></i> MEETING WITH THE TEAM</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="">
+
+                            <form name="newMail" class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Topic:</label>
+                                    <div class="col-lg-8 pt-meeting-info">MEETING WITH THE TEAM</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Invited (4):</label>
+                                    <div class="col-lg-8 pt-meeting-info">Alex Laptev, Francois Montandon, Mike Gefferson, Helen Gefferson</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Add participants:</label>
+                                    <div class="col-lg-8">
+                                        <select data-placeholder="Select recipients..." multiple="" tabindex="3" class="chosen-select" style="width: 100%;">
+                                            <option value="ici@gmail.com">ici@gmail.com</option>
+                                            <option value="johny@gmail.com">johny@gmail.com</option>
+                                            <option value="arnie@gmail.com">arnie@gmail.com</option>
+                                            <option value="pete@gmail.com">pete@gmail.com</option>
+                                            <option value="gorge@gmail.com">gorge@gmail.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Date and Time:</label>
+                                    <div class="col-lg-8 pt-meeting-info">13 February 2016, 13:30</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Duration:</label>
+                                    <div class="col-lg-8 pt-meeting-info">30 min</div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer mt-10">
+                        <button class="btn btn-danger pull-left">Cancel meeting</button>
+                        <button class="btn btn-default mr-5"><i class="fa fa-eye mr-5"></i> Preview invitation</button>
+                        <button class="btn btn-primary"><i class="fa fa-send-o mr-5"></i> Send 6 invitations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade pt-modal" id="cancel_meeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog pt-shadow">
+                <div class="modal-content noshadow b-0">
+                    <div class="modal-body">
+                        Cancel meeting?
+                        <h4 class="m-0 p-0 mt-20">MEETING WITH THE TEAM, 16 February 2016</h4>
+                        <small class="m-0 p-0">Alex Laptev, Francois Montandon, Mike Gefferson, Helen Gefferson</small>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-lightred">Yes, send cancelation to participants</button>
+                        <button class="btn btn-default" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>
+

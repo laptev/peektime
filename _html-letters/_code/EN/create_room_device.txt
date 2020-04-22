@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="format-detection" content="telephone=no"></meta>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" background="#f2f2f2" style="font-family:Arial;font-size:16px;">
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0;background-color:#f2f2f2;" width="100%">
+  <tr>
+    <td align="center" width="100%">
+
+      <table border="0" cellpadding="0" cellspacing="19" style="margin:0; padding:15px;" width="600">
+         <tr>
+            <td width="100%" align="center"><img src="%img%peektime_logo.jpg" height="35" width="150"></td>
+         </tr>
+      </table>
+
+      <table border="0" cellpadding="0" cellspacing="" style="margin:0; padding:20px; background-color:#00ABDF;" width="600">
+         <tr>
+            <td style="padding:10px;font-family:Arial;font-size:22px;color:#fff;" align="center">One of your devices has been assigned as a Host to the new Peektime Virtual Meeting Room</td>
+         </tr>
+      </table>
+
+      <table border="0" cellpadding="10" cellspacing="" style="margin:0; padding:20px; background-color:#FAFAFA;" width="600">
+         <tr>
+            <td style="font-family:Arial;font-size:14px;color:#4A4A4A;" align="left"><span style="font-family:Arial;font-size:16px;color:#4A4A4A;">Connection details</span><br><br>
+			
+			<b> for Skype, S4B</b>: <i>%room_name%@%domain%</i><br>
+			<b> for Cisco, Polycom, LifeSize VC:</b>: <i>%room_number%@%videonode_ip%</i><br>
+			<b> for browser guest connection:</b>: <i>https://%domain%/%room_name%</i><br>
+			<b> Whteboard link</b>: <i>%white_board_url%</i><br><br>
+
+			To host your new interoperable VMR - simply make a call with your device on <b>%room_number%@%videonode_ip%</b>
+			</td>
+			
+		
+         </tr>
+       
+      </table>
+
+      <table border="0" cellpadding="0" cellspacing="" style="margin:0; padding:0px; background-color:#FAFAFA;" width="600">
+         <tr>
+            <td style="padding:0px;font-family:Arial;font-size:16px;color:#4A4A4A;" align="center">What is Peektime?<br><br><img src="%img%whatispeektime.jpg" height="265" width="590"><br><p style="font-size:13px;font-family:Arial;color:#9B9B9B;padding:0px;">Want to know more? <a href="http://www.peektime.com" target="_blank" style="color:#0072C3;font-size:13px;text-decoration:none;">Visit our site</a><br><br></td>
+         </tr>
+      </table>
+
+      <table border="0" cellpadding="0" cellspacing="" style="margin:0; padding:20px; background-color:#E5E5E5;" width="600">
+         <tr>
+            <td style="padding:0px;font-family:Arial;font-size:12px;color:#9B9B9B;" align="left">You received this letter because your e-mail address subscribed for free account on Peektime. If it was not you and/or you received this letter by mistake - please ignore it and accept our apologies.</td>
+         </tr>
+      </table>
+
+      <table border="0" cellpadding="0" cellspacing="" style="margin:0;" width="600">
+         <tr>
+            <td style="padding:30px;font-family:Arial;font-size:12px;color:#9B9B9B;" align="center">Copyright &copy; 2016 <a href="http://www.peektime.com" target="_blank" style="color:#0072C3;font-size:12px;text-decoration:none;">www.peektime.com</a></td>
+         </tr>
+      </table>
+
+
+      <br>
+
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
